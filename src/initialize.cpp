@@ -13,6 +13,8 @@ void initialize() {
     Robot * robot = Robot::getInstance();
     printf("initializing! \n");
 
+    printf("Written by Zheyuan Hu from 448X Echo. This is my gift to 1138C! \n");
+
     BigScreenTV* bigTV = new BigScreenTV();
     bigTV->createUIComponents();
     pros::Task refresh(bigTV->updateScreen);
