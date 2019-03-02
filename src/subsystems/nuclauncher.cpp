@@ -14,12 +14,13 @@ void NucLauncher::initMotors() {
     puncher_2_Motor = new okapi::Motor(RobotStates::PUNCHER_2_PORT);
     puncher_1_Motor->setGearing(AbstractMotor::gearset::red);
     puncher_2_Motor->setGearing(AbstractMotor::gearset::red);
-    // puncher_1_Motor->setReversed(true);
+
+    puncher_1_Motor->setReversed(true);
 }
 
 void NucLauncher::punchIT() {
-    puncher_1_Motor->move(127);
-    puncher_2_Motor->move(127);
+    puncher_1_Motor->move(-127);
+    puncher_2_Motor->move(-127);
 }
 
 void NucLauncher::stopPunchers() {

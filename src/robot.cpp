@@ -39,7 +39,7 @@ Robot::Robot() {
     );
 
     static auto _profileController = AsyncControllerFactory::motionProfile(
-        in2meter(45.0),  // Maximum linear velocity of the Chassis in m/s 40
+        in2meter(42.0),  // Maximum linear velocity of the Chassis in m/s 40
         in2meter(65.0),  // Maximum linear acceleration of the Chassis in m/s/s 60
         in2meter(500.0), // Maximum linear jerk of the Chassis in m/s/s/s
         *base // Chassis Controller
@@ -48,7 +48,7 @@ Robot::Robot() {
     static auto _mediumSpeedController = AsyncControllerFactory::motionProfile(
         in2meter(30.0),  // Maximum linear velocity of the Chassis in m/s 40
         in2meter(45.0),  // Maximum linear acceleration of the Chassis in m/s/s 60
-        in2meter(450.0), // Maximum linear jerk of the Chassis in m/s/s/s
+        in2meter(400.0), // Maximum linear jerk of the Chassis in m/s/s/s
         *base // Chassis Controller
     );
 

@@ -7,12 +7,6 @@ class RobotStates {
 
         static RobotStates* getInstance();
         //ports config
-        const static double ROBOT_WIDTH_in;
-        const static double ROBOT_LENGTH_in;
-        const static double ROBOT_MAX_VELOCITY_in;
-        const static double ROBOT_MAX_ACCEL_in;
-        const static double ROBOT_MAX_JERK_in;
-
         const static int CAMERA_PORT = 0;
         
         const static int PUNCHER_1_PORT = 7;

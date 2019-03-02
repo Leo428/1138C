@@ -1,11 +1,6 @@
 #include "userincludes/robotstates.hpp"
 
 RobotStates* RobotStates::instance = nullptr;
-const double RobotStates::ROBOT_WIDTH_in = 0;
-const double RobotStates::ROBOT_LENGTH_in = 0;
-const double RobotStates::ROBOT_MAX_VELOCITY_in = 0;
-const double RobotStates::ROBOT_MAX_ACCEL_in = 0;
-const double RobotStates::ROBOT_MAX_JERK_in = 0;
 
 RobotStates::FieldColor RobotStates::fieldColor; //initialize the static stuff!
 RobotStates::AutoChoice RobotStates::autoChoice;

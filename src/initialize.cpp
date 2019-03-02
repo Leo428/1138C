@@ -21,9 +21,9 @@ void initialize() {
     delay(200);
     
     //each controller can only have 3 paths at a time so sad
-    Robot::profileController->generatePath({Point{0_ft, 0_ft, 0_deg}, Point{2.75_ft, 0_ft, 0_deg}}, "A");
+    Robot::profileController->generatePath({Point{0_ft, 0_ft, 0_deg}, Point{3.75_ft, 0_ft, 0_deg}}, "A");
     // 4 to 0.65
-    Robot::profileController->generatePath({Point{4_ft, 0_ft, 0_deg}, Point{0.7_ft, 0_ft, 0_deg}}, "B");
+    Robot::profileController->generatePath({Point{0_ft, 0_ft, 0_deg}, Point{0.6_ft, 0_ft, 0_deg}}, "back2plat");
     //0.8181 
     Robot::turnController->generatePath({Point{0_ft, 0_ft, 0_deg}, Point{0.8181_ft, 0_ft, 0_deg}}, "90deg");
 }

@@ -20,6 +20,7 @@
 okapi::Controller master;
 
 void opcontrol() {
+	Robot::base->setBrakeMode(okapi::AbstractMotor::brakeMode::coast);
 	while (true) {
 		Robot::base->arcade(master.getAnalog(okapi::ControllerAnalog::leftY), master.getAnalog(okapi::ControllerAnalog::leftX), 0.1);
 		// Robot::base->tank(master.getAnalog(okapi::ControllerAnalog::leftY), master.getAnalog(okapi::ControllerAnalog::rightY), 0.2);
@@ -33,7 +34,7 @@ void opcontrol() {
 			Robot::collector->stopCollector();
 		}
 
-		if(master.getDigital(okapi::ControllerDigital::L1)) {
+		if(master.getDigital(okapi::ControllerDigital::R1)) {
 			Robot::nuc->punchIT();
 		} else {
 			Robot::nuc->stopPunchers();

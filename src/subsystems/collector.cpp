@@ -8,11 +8,11 @@ Collector::Collector() {
 }
 
 void Collector::collectBalls() {
-    ballCollector->move(127);
+    ballCollector->move(-127);
 }
 
 void Collector::outBall() {
-    ballCollector->move(-127);
+    ballCollector->move(127);
 }
 
 void Collector::stopCollector() {
